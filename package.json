@@ -1,9 +1,11 @@
 {
   "name": "expose-bash-over-websockets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Serve a bash session over web sockets",
   "main": "server.js",
-  "bin": "server.js",
+  "bin": {
+    "expose-bash-over-websockets": "server.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -22,5 +24,13 @@
     "mux-demux": "~3.7.9",
     "JSONStream": "~0.8.4"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/generalhenry/expose-bash-over-websockets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/generalhenry/expose-bash-over-websockets/issues"
+  },
+  "homepage": "https://github.com/generalhenry/expose-bash-over-websockets"
 }
