@@ -1,0 +1,26 @@
+{
+  "name": "expose-bash-over-websockets",
+  "version": "0.1.0",
+  "description": "Serve a bash session over web sockets",
+  "main": "server.js",
+  "bin": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postInstall": "browserify client.js -o ./public/index.js"
+  },
+  "author": "Henry Allen-Tilford",
+  "license": "ISC",
+  "dependencies": {
+    "term.js": "0.0.4",
+    "pty.js": "~0.2.4",
+    "browserify": "~4.2.0",
+    "express": "~4.5.0",
+    "domready": "~1.0.5",
+    "shoe": "0.0.15",
+    "emit-stream": "~0.1.2",
+    "mux-demux": "~3.7.9",
+    "JSONStream": "~0.8.4"
+  },
+  "devDependencies": {}
+}
