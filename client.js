@@ -40,9 +40,6 @@ function onTerminal(stream) {
     screenKeys: true
   });
   term.on('data', stream.write.bind(stream));
-  term.once('data', function(data) {
-    clientEvents.emit('enableLog');
-  });
   term.open();
   stream.pipe(term);
   term.end = term.destroy;
