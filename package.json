@@ -15,9 +15,9 @@
   "license": "ISC",
   "dependencies": {
     "term.js": "0.0.4",
-    "pty.js": "~0.2.4",
+    "node-pty": "^0.10.1",
     "browserify": "~4.2.0",
-    "express": "~4.5.0",
+    "express": "^4.19.2",
     "domready": "~1.0.5",
     "shoe": "0.0.15",
     "emit-stream": "~0.1.2",
